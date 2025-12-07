@@ -1,6 +1,9 @@
 ## Overview
 This project provides a real-time market tracking solution for specific cryptocurrency pairs on the Binance exchange. It uses Asynchronous I/O (asyncio) to fetch historical data via the REST API and live candlestick data via WebSockets. The collected data is then processed and fed into the sumtyme API for analysis, with the results logged to per-ticker CSV files.
 
+## Project 
+This tracker identifies opportunities based on the underlying structure of identical crypto instruments denominated in different currencies. It uses the directional shift observed in one asset pair to anticipate the same directional change in the related instrument.
+
 ## Features
 - Real-time Data Streaming: Connects to Binance WebSockets for live candlestick updates.
 - Historical Data Ingestion: Fetches up to 5000 historical k-lines from the Binance REST API for initial setup.
@@ -13,8 +16,8 @@ This project provides a real-time market tracking solution for specific cryptocu
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/sumteam/binance-crypto-arbitrage-tracker
-    cd binance-crypto-arbitrage-tracker
+    git clone https://github.com/sumteam/crypto-arbitrage-tracker
+    cd crypto-arbitrage-tracker
     ```
 2.  **Install dependencies:**
     All required Python packages are specified in the `requirements.txt` file. Install them using `pip`:
