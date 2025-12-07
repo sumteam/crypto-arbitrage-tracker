@@ -54,6 +54,13 @@ The application will:
 
 - Write forecast results to CSV files like BTCUSDT_chain_log.csv.
 
+## Analysis Type Configuration
+
+The analysis type is controlled by changing the reasoning variable on line 175 of the main.py file.
+
+- 'proactive': Acts early, relying on minimal initial information. 
+- 'reactive': Waits for sufficient evidence before taking action.
+
 ## Output
 
 Forecast results are stored in **CSV files** in the same directory, named after the ticker (e.g. `BTCUSDT_chain_log.csv`).
